@@ -1,0 +1,13 @@
+# Force-collapse all data files so they don't count towards metrics
+*.csv linguist-vendored
+*.csv linguist-detectable=false
+
+# Strip out Jupyter notebook file weight completely
+*.ipynb linguist-vendored
+*.ipynb linguist-documentation
+*.ipynb linguist-detectable=false
+*.ipynb -linguist-language
+
+# Force-assign all Python scripts to calculate at maximum weight
+*.py linguist-detectable=true
+*.py linguist-language=Python
